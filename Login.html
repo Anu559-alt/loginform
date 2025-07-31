@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left, .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+         .left {
+            background-color: #fff;
+            
+        }
+        .right {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: #fff;
+        }
+        .left h2, .right h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .left .social-icons {
+            margin: 20px 0;
+        }
+        .left .social-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+        .left .social-icons i:hover {
+            color: #ff4b2b;
+        }
+        .left .input-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .left .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .left .input-group input:focus{
+            outline:none;
+        }
+        .left .forgot-password {
+            align-self: flex-start;
+            margin: 10px 0;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .left .forgot-password:hover {
+            color: #ff4b2b;
+        }
+        .left .btn {
+            background-color: #ff4b2b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .left .btn:hover {
+            background-color: #ff416c;
+        }
+        .right .btn {
+            background-color: transparent;
+            color: #fff;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .right .btn:hover {
+            background-color: #fff;
+            color: #ff4b2b;
+        }
+        @media (max-width: 1007px) {
+            .container {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        @media (max-width: 640px) {
+            .left h2, .right h2 {
+                font-size: 20px;
+            }
+            .left .social-icons i {
+                font-size: 18px;
+            }
+            .left .input-group input {
+                padding: 8px;
+            }
+            .left .btn, .right .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Sign in</h2>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>or use your account</p>
+            <div class="input-group">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="forgot-password">Forgot your password?</div>
+            <button class="btn">SIGN IN</button>
+        </div>
+        <div class="right">
+            <h2>Hello, Friend!</h2>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="btn">SIGN UP</button>
+        </div>
+    </div>
+</body>
+</html>
